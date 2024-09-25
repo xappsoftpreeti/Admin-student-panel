@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/xappsoftpreeti/Admin-student-panel#readme",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "colors": "^1.4.0",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
