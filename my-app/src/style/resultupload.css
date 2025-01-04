@@ -1,0 +1,104 @@
+/* resultupload.css */
+
+/* Container Styling */
+.publish-result-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.form-heading {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+.result-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Form Input Fields */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Label Styling */
+.form-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+/* Input Fields */
+.form-input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Focused Input Field Styling */
+.form-input:focus {
+    border-color: #4CAF50;
+}
+
+/* Submit Button Styling */
+.submit-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+/* Button Hover Effect */
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+/* Message Display */
+.form-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #4CAF50;
+}
+
+/* Disabled Button Styling */
+.submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    z-index: 1;
+    padding-top: 20px;
+}
+
+.publish-result-container {
+    margin-left: 300px;
+}

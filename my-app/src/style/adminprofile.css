@@ -1,0 +1,137 @@
+/* General container styling */
+.container {
+    display: flex;
+    justify-content: center;
+    /* Center the content horizontally */
+    align-items: center;
+    background-color: #f0f2f5;
+    padding: 20px;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.admin-profile {
+    width: 100%;
+    max-width: 900px;
+    background: linear-gradient(135deg, #ffffff, #f3f4f8);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-profile h2 {
+    color: #2a3d56;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.profile-details {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+}
+
+.profile-item {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-item strong {
+    font-weight: bold;
+    color: #2a3d56;
+    font-size: 1.1rem;
+}
+
+.profile-item span {
+    color: #777;
+    font-style: italic;
+    text-align: right;
+}
+
+.profile-item:last-child {
+    margin-bottom: 0;
+}
+
+.buttons-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.button.edit {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.button.edit:hover {
+    background-color: #0056b3;
+}
+
+.button.delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.button.delete:hover {
+    background-color: #c82333;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    z-index: 1;
+    padding-top: 20px;
+}
+
+.admin-profile {
+    margin-left: 270px;
+}
+
+@media screen and (max-width: 768px) {
+    .admin-profile {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .admin-profile h2 {
+        font-size: 2rem;
+    }
+
+    .profile-item {
+        font-size: 1rem;
+    }
+
+    .button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}

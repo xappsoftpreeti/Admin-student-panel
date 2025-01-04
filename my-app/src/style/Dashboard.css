@@ -1,0 +1,138 @@
+/* Container for the dashboard page */
+.dashboard {
+    margin-left: 260px;
+    /* Ensuring space for the sidebar */
+    padding: 50px;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #ff9a8b, #f7ffb8);
+    /* Soft gradient background */
+    min-height: 100vh;
+    background-attachment: fixed;
+    color: #34495e;
+}
+
+/* Main Heading */
+.dashboard h1 {
+    font-size: 40px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Subheading */
+.dashboard p {
+    font-size: 22px;
+    color: #7f8c8d;
+    margin-bottom: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* Stats Container */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* Ensures responsive design */
+}
+
+/* Each Stat Item */
+.stat-item {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effect with a modern look */
+.stat-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    background: #1abc9c;
+    color: white;
+}
+
+/* Stat Title (h3) */
+.stat-item h3 {
+    font-size: 24px;
+    color: #34495e;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* Stat Value (p) */
+.stat-item p {
+    font-size: 42px;
+    color: #2c3e50;
+    font-weight: 700;
+    margin-top: 10px;
+    position: relative;
+}
+
+/* Animated dot for numbers */
+.stat-item p::after {
+    content: "•";
+    font-size: 50px;
+    color: #1abc9c;
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    animation: pulse 1s infinite ease-in-out;
+}
+
+/* Pulse Animation for the dot */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: scale(1.6);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+}
+
+/* Background Pattern for the dashboard */
+.dashboard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/diagonal_stripes.png");
+    /* Subtle background pattern */
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
